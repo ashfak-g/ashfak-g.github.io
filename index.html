@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashfak | Data Analyst & ML Engineer Portfolio</title>
+    <!-- Google Fonts: Sora for premium modern headers, Outfit for body readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Grid Effect -->
+    <div class="grid-bg"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-tag">&lt;</span><span id="logoName">Ashfak</span><span class="logo-dot">.</span>dev<span class="logo-tag">/&gt;</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active" data-en="Home" data-bn="হোম">Home</a>
+                <a href="#about" class="nav-link" data-en="About" data-bn="সম্পর্কে">About</a>
+                <a href="#resume-section" class="nav-link" data-en="Resume" data-bn="জীবনবৃত্তান্ত">Resume</a>
+                <a href="#projects" class="nav-link" data-en="Projects" data-bn="প্রজেক্ট">Projects</a>
+                
+                <!-- Tools Dropdown Menu -->
+                <div class="nav-dropdown">
+                    <a href="#interactive-zone" class="nav-link dropdown-trigger" data-en="Tools" data-bn="টুলস">Tools <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-menu-list">
+                        <a href="#interactive-zone" class="dropdown-item-link" data-tab="ml-tab" data-en="ML Playground" data-bn="মেশিন লার্নিং">ML Playground</a>
+                        <a href="#interactive-zone" class="dropdown-item-link" data-tab="profiler-tab" data-en="Data Profiler" data-bn="ডেটা প্রফাইল">Data Profiler</a>
+                        <a href="#interactive-zone" class="dropdown-item-link" data-tab="notebook-tab" data-en="Notebook Analyzer" data-bn="নোটবুক অ্যানালাইজার">Notebook Analyzer</a>
+                    </div>
+                </div>
+
+                <a href="#hiring-roles" class="nav-link" data-en="Hiring" data-bn="হায়ার করুন">Hiring</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+                
+                <!-- Language Toggle Button -->
+                <button id="langToggleBtn" class="lang-toggle-btn">🌐 EN</button>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section reveal">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span> <span data-en="Available for Projects" data-bn="প্রজেক্টের জন্য প্রস্তুত">Available for Projects</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span id="typewriterName" class="highlight-text">Ashfakur Rahman</span><span class="cursor">|</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I am a <span id="typewriterRole" class="highlight-text">Data Analyst</span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description" id="heroBio">
+                    Extracting insights from complex datasets and building intelligent systems that solve real-world problems. Specialized in predictive modeling, statistical analysis, and interactive data storytelling.
+                </p>
+                <div class="hero-buttons">
+                    <a href="resume.pdf" id="heroResumeBtn" class="btn btn-primary" download data-en="My Resume" data-bn="আমার সিভি">
+                        <i class="fa-solid fa-file-arrow-down"></i> My Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Hire Me" data-bn="যোগাযোগ করুন">
+                        <i class="fa-solid fa-envelope"></i> Hire Me
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="profile-image-container">
+                    <div class="profile-image-glow"></div>
+                    <div class="profile-image-frame">
+                        <img src="ashfak-profile-image.jpg" alt="Profile Photo" id="profileImg" class="profile-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=700&q=80'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="about-section reveal">
+        <div class="section-header">
+            <div class="bg-watermark" data-en="About" data-bn="সম্পর্কে">About</div>
+            <h2 class="section-title" data-en="About Me" data-bn="আমার সম্পর্কে">About Me</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle" data-en="Bridging the gap between raw numbers and business decisions" data-bn="সংখ্যা এবং ব্যবসায়িক সিদ্ধান্তের মধ্যে যোগসূত্র তৈরি করা">Bridging the gap between raw numbers and business decisions</p>
+        </div>
+        <div class="about-container">
+            <div class="about-text-column">
+                <h3 class="about-intro-title" data-en="Who is Ashfak?" data-bn="আশফাক কে?">Who is Ashfak?</h3>
+                <p class="about-para" id="aboutBio">
+                    I am a passionate Data Analyst and Machine Learning Engineer...
+                </p>
+                
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-label" data-en="Degree:" data-bn="ডিগ্রি:"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                        <span class="info-value" id="infoDegree">B.Sc. in Computer Science</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label" data-en="Email:" data-bn="ইমেইল:"><i class="fa-solid fa-envelope"></i> Email:</span>
+                        <span class="info-value" id="infoEmail">ashfak.cse.221@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label" data-en="Location:" data-bn="ঠিকানা:"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                        <span class="info-value" id="infoLocation">Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Timeline Preview Snapshot Card -->
+            <div class="about-chart-column">
+                <div class="resume-snapshot-card">
+                    <h3 class="snapshot-title" data-en="Career Snapshot" data-bn="ক্যারিয়ার স্ন্যাপশট"><i class="fa-solid fa-history"></i> Career Snapshot</h3>
+                    <div class="snapshot-timeline" id="snapshotTimeline">
+                        <!-- Loaded dynamically from script.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section Below -->
+        <div class="about-skills-section">
+            <h3 class="skills-title" data-en="Skills & Expertise" data-bn="দক্ষতা ও স্কিলসমূহ"><i class="fa-solid fa-sliders"></i> Skills & Expertise</h3>
+            <div class="skills-flex-container">
+                <div class="skills-flex-col" id="skillsLeft">
+                    <!-- First 4 skills loaded dynamically -->
+                </div>
+                <div class="skills-flex-col" id="skillsRight">
+                    <!-- Last 4 skills loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume-section" class="resume-section-wrapper reveal">
+        <div class="section-header">
+            <div class="bg-watermark" data-en="Resume" data-bn="বৃত্তান্ত">Resume</div>
+            <h2 class="section-title" data-en="Resume" data-bn="জীবনবৃত্তান্ত">Resume</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle" data-en="A detailed overview of my educational background and professional timeline" data-bn="শিক্ষাগত যোগ্যতা এবং কাজের অভিজ্ঞতার বিস্তারিত টাইমলাইন">A detailed overview of my educational background and professional timeline</p>
+        </div>
+        
+        <div class="resume-download-bar">
+            <p data-en="Get an offline copy of my complete professional profile" data-bn="আমার প্রফেশনাল জীবনবৃত্তান্তের (PDF) একটি অফলাইন কপি ডাউনলোড করুন">Get an offline copy of my complete professional profile</p>
+            <a href="resume.pdf" id="resumeDownloadBtn" class="btn btn-primary" download data-en="Download CV (PDF)" data-bn="সিভি ডাউনলোড করুন (PDF)">
+                <i class="fa-solid fa-download"></i> Download CV (PDF)
+            </a>
+        </div>
+
+        <div class="resume-columns">
+            <!-- Experience Column -->
+            <div class="resume-col">
+                <h3 class="resume-col-title" data-en="Work Experience" data-bn="কাজের অভিজ্ঞতা"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                <div class="timeline-container" id="experienceTimeline">
+                    <!-- Loaded dynamically from data.js -->
+                </div>
+            </div>
+            
+            <!-- Education Column -->
+            <div class="resume-col">
+                <h3 class="resume-col-title" data-en="Education" data-bn="শিক্ষাগত যোগ্যতা"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                <div class="timeline-container" id="educationTimeline">
+                    <!-- Loaded dynamically from data.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section reveal">
+        <div class="section-header">
+            <div class="bg-watermark" data-en="Projects" data-bn="প্রজেক্ট">Projects</div>
+            <h2 class="section-title" data-en="Featured Projects" data-bn="ফিচার্ড প্রজেক্টস">Featured Projects</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle" data-en="A collection of data analytics pipelines and machine learning systems" data-bn="ডাটা অ্যানালিটিক্স এবং মেশিন লার্নিং প্রজেক্টের একটি সংগ্রহ">A collection of data analytics pipelines and machine learning systems</p>
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all" data-en="All Projects" data-bn="সকল প্রজেক্ট">All Projects</button>
+            <button class="filter-btn" data-filter="ml" data-en="Machine Learning" data-bn="মেশিন লার্নিং">Machine Learning</button>
+            <button class="filter-btn" data-filter="dashboard" data-en="Dashboards" data-bn="ড্যাশবোর্ড">Dashboards</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Loaded dynamically from data.js -->
+        </div>
+
+        <!-- Stats Panel -->
+        <div class="stats-panel">
+            <div class="stat-box">
+                <div class="stat-num" id="statCompleted">20+</div>
+                <div class="stat-label" data-en="Completed Jobs" data-bn="সম্পন্ন প্রজেক্ট">Completed Jobs</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num" id="statProjects">6+</div>
+                <div class="stat-label" data-en="Dashboards Created" data-bn="তৈরিকৃত ড্যাশবোর্ড">Dashboards Created</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num" id="statExperience">2+ Years</div>
+                <div class="stat-label" data-en="Experience" data-bn="কাজের অভিজ্ঞতা">Experience</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">95%</div>
+                <div class="stat-label" data-en="Model Accuracy" data-bn="মডেল একুরেসি">Model Accuracy</div>
+            </div>
+        </div>
+
+        <div class="github-cta">
+            <h3 data-en="Explore more codes on GitHub" data-bn="গিটহাবে আমার অন্যান্য কোড দেখুন">Explore more codes on GitHub</h3>
+            <a href="https://github.com" target="_blank" id="githubProfileLink" class="btn btn-secondary" data-en="Visit My GitHub" data-bn="আমার গিটহাব প্রোফাইল">
+                <i class="fa-brands fa-github"></i> Visit My GitHub
+            </a>
+            <p class="github-quote" data-en="&quot;No code is clean, but what is useful.&quot; - Analysing data to solve real business bottlenecks." data-bn="&quot;কোনো কোডই নিখুঁত নয়, কাজের হওয়াটাই আসল।&quot; - ডেটা বিশ্লেষণের মাধ্যমে ব্যবসার সমস্যা সমাধান করা।">"No code is clean, but what is useful." - Analysing data to solve real business bottlenecks.</p>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Zone Section (ML Playground & Data Profiler combined) -->
+    <section id="interactive-zone" class="playground-section reveal">
+        <div class="section-header">
+            <div class="bg-watermark" data-en="Playground" data-bn="প্লেগ্রাউন্ড">Tools</div>
+            <h2 class="section-title" data-en="Interactive Playgrounds" data-bn="ইন্টারেক্টিভ প্লেগ্রাউন্ড">Interactive Tools</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle" data-en="Choose an interactive tool below to experience machine learning and data analysis in action!" data-bn="নিচের ইন্টারেক্টিভ টুলগুলো ব্যবহার করে ব্রাউজারেই মেশিন লার্নিং ও ডেটা অ্যানালিসিস পরীক্ষা করুন!">Choose an interactive tool below to experience machine learning and data analysis in action!</p>
+        </div>
+
+        <!-- Tab Controls (Similar to project filters) -->
+        <div class="tools-tab-container">
+            <button class="tab-btn active" data-tab="ml-tab">
+                <i class="fa-solid fa-brain"></i> <span data-en="ML Regression Canvas" data-bn="মেশিন লার্নিং প্লেগ্রাউন্ড">ML Regression Canvas</span>
+            </button>
+            <button class="tab-btn" data-tab="profiler-tab">
+                <i class="fa-solid fa-database"></i> <span data-en="Interactive Data Profiler" data-bn="ডেটা প্রফাইল অ্যানালিসিস">Interactive Data Profiler</span>
+            </button>
+            <button class="tab-btn" data-tab="notebook-tab">
+                <i class="fa-solid fa-file-code"></i> <span data-en="ML Notebook Analyzer" data-bn="এমএল নোটবুক অ্যানালাইজার">ML Notebook Analyzer</span>
+            </button>
+        </div>
+
+        <div class="tools-tab-content">
+            <!-- ML Playground Tab Content -->
+            <div id="ml-tab" class="tab-pane active">
+                <div class="playground-container">
+                    <div class="canvas-card">
+                        <div class="canvas-header">
+                            <div class="canvas-title" data-en="Scatter Canvas" data-bn="গ্রাফ ক্যানভাস">Scatter Canvas</div>
+                            <span class="canvas-hint" data-en="Click inside the canvas to add data points" data-bn="বিন্দু বসাতে ক্যানভাসের ভেতর ক্লিক করুন"><i class="fa-solid fa-circle-info"></i> Click inside the canvas to add data points</span>
+                        </div>
+                        <div class="canvas-wrapper">
+                            <canvas id="mlCanvas" width="600" height="400"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="controls-card">
+                        <h3 class="controls-title" data-en="Model Hyperparameters" data-bn="মডেল হাইপারপ্যারামিটার">Model Hyperparameters</h3>
+                        
+                        <div class="control-group">
+                            <label for="modelType" data-en="Model Type:" data-bn="মডেলের ধরন:">Model Type:</label>
+                            <select id="modelType" class="control-select">
+                                <option value="linear" data-en="Linear Regression (y = mx + c)" data-bn="লিনিয়ার রিগ্রেশন (y = mx + c)">Linear Regression (y = mx + c)</option>
+                                <option value="polynomial" data-en="Polynomial Regression (Degree 2)" data-bn="পলিনমিয়াল রিগ্রেশন (ডিগ্রী ২)">Polynomial Regression (Degree 2)</option>
+                                <option value="cubic" data-en="Polynomial Regression (Degree 3)" data-bn="পলিনমিয়াল রিগ্রেশন (ডিগ্রী ৩)">Polynomial Regression (Degree 3)</option>
+                            </select>
+                        </div>
+
+                        <div class="dashboard-metrics">
+                            <div class="metric-box">
+                                <div class="metric-val" id="pointCount">0</div>
+                                <div class="metric-lbl" data-en="Total Points" data-bn="মোট বিন্দু">Total Points</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="r2Score">N/A</div>
+                                <div class="metric-lbl" data-en="R² Score" data-bn="R² স্কোর">R² Score</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="mseVal">N/A</div>
+                                <div class="metric-lbl" data-en="MSE" data-bn="MSE মান">MSE</div>
+                            </div>
+                        </div>
+
+                        <div class="equation-display">
+                            <div class="eq-title" data-en="Model Equation:" data-bn="মডেল সমীকরণ:">Model Equation:</div>
+                            <div class="eq-content" id="equationContent" data-en="Add points to compute model" data-bn="সমীকরণের জন্য বিন্দু যোগ করুন">Add points to compute model</div>
+                        </div>
+
+                        <div class="control-buttons">
+                            <button id="clearBtn" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> <span data-en="Clear Points" data-bn="মুছে ফেলুন">Clear Points</span></button>
+                            <button id="randomBtn" class="btn btn-secondary"><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-en="Generate Points" data-bn="বিন্দু তৈরি করুন">Generate Points</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Profiler Tab Content -->
+            <div id="profiler-tab" class="tab-pane">
+                <div class="profiler-container">
+                    <!-- Upload Box -->
+                    <div class="upload-card">
+                        <div class="upload-zone" id="uploadZone">
+                            <i class="fa-solid fa-file-csv upload-icon"></i>
+                            <h3 data-en="Drag & Drop Dataset Here" data-bn="ডেটাসেট ড্র্যাগ ও ড্রপ করুন">Drag & Drop Dataset Here</h3>
+                            <p data-en="Supports .csv, .json files (Max 5MB)" data-bn="সমর্থিত ফরম্যাট: .csv, .json (সর্বোচ্চ ৫এমবি)">Supports .csv, .json files (Max 5MB)</p>
+                            <div class="or-divider" data-en="OR" data-bn="অথবা">OR</div>
+                            <label for="csvFileInput" class="btn btn-primary btn-upload">
+                                <i class="fa-solid fa-folder-open"></i> <span data-en="Browse Files" data-bn="ফাইল খুঁজুন">Browse Files</span>
+                            </label>
+                            <input type="file" id="csvFileInput" accept=".csv,.json" style="display: none;">
+                        </div>
+                        <!-- Load Demo Dataset Button -->
+                        <button id="loadDemoBtn" class="btn btn-secondary btn-block" style="margin-top: 1rem;">
+                            <i class="fa-solid fa-table"></i> <span data-en="Load Demo Sales Dataset" data-bn="ডেমো ডাটাসেট লোড করুন">Load Demo Sales Dataset</span>
+                        </button>
+                    </div>
+
+                    <!-- Analysis Report Card -->
+                    <div class="report-card" id="reportCard" style="display: none;">
+                        <h3 class="report-title"><i class="fa-solid fa-chart-simple"></i> <span data-en="Dataset Profile Report" data-bn="ডেটাসেট প্রফাইল রিপোর্ট">Dataset Profile Report</span></h3>
+                        
+                        <div class="report-metrics">
+                            <div class="metric-box">
+                                <div class="metric-val" id="rowQuantity">0</div>
+                                <div class="metric-lbl" data-en="Total Rows" data-bn="মোট রো">Total Rows</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="colQuantity">0</div>
+                                <div class="metric-lbl" data-en="Total Columns" data-bn="মোট কলাম">Total Columns</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="missingQuantity">0</div>
+                                <div class="metric-lbl" data-en="Missing Values" data-bn="মিসিং ভ্যালু">Missing Values</div>
+                            </div>
+                        </div>
+
+                        <!-- Data Story Paragraph Banner -->
+                        <div class="data-story-banner" id="dataStoryBanner">
+                            <!-- Dynamically loaded -->
+                        </div>
+
+                        <!-- Quality Assessment Banner -->
+                        <div class="quality-banner" id="qualityBanner">
+                            <!-- Loaded dynamically -->
+                        </div>
+
+                        <!-- Column Summary Table -->
+                        <div class="table-wrapper">
+                            <table class="summary-table">
+                                <thead>
+                                    <tr>
+                                        <th data-en="Column Name" data-bn="কলামের নাম">Column Name</th>
+                                        <th data-en="Data Type" data-bn="ডাটা টাইপ">Data Type</th>
+                                        <th data-en="Null Count" data-bn="ফাঁকা সেল">Null Count</th>
+                                        <th data-en="Unique Values" data-bn="ইউনিক ভ্যালু">Unique Values</th>
+                                        <th data-en="Sample Value" data-bn="নমুনা মান">Sample Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="summaryTableBody">
+                                    <!-- Loaded dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notebook Analyzer Tab Content -->
+            <div id="notebook-tab" class="tab-pane">
+                <div class="profiler-container">
+                    <!-- Upload Box -->
+                    <div class="upload-card">
+                        <div class="upload-zone" id="notebookUploadZone">
+                            <i class="fa-solid fa-file-code upload-icon"></i>
+                            <h3 data-en="Drag & Drop .ipynb Here" data-bn="এখানে .ipynb ফাইল ড্রপ করুন">Drag & Drop .ipynb Here</h3>
+                            <p data-en="Supports Jupyter Notebook files (Max 8MB)" data-bn="সমর্থিত ফরম্যাট: .ipynb (সর্বোচ্চ ৮এমবি)">Supports Jupyter Notebook files (Max 8MB)</p>
+                            <div class="or-divider" data-en="OR" data-bn="অথবা">OR</div>
+                            <label for="notebookFileInput" class="btn btn-primary btn-upload">
+                                <i class="fa-solid fa-folder-open"></i> <span data-en="Browse Files" data-bn="ফাইল খুঁজুন">Browse Files</span>
+                            </label>
+                            <input type="file" id="notebookFileInput" accept=".ipynb" style="display: none;">
+                        </div>
+                        <!-- Load Demo Notebook Button -->
+                        <button id="loadDemoNotebookBtn" class="btn btn-secondary btn-block" style="margin-top: 1rem;">
+                            <i class="fa-solid fa-brain"></i> <span data-en="Load Demo ECG Analysis Notebook" data-bn="ডেমো ইসিজি অ্যানালিসিস নোটবুক লোড করুন">Load Demo ECG Analysis Notebook</span>
+                        </button>
+                    </div>
+
+                    <!-- Analysis Report Card -->
+                    <div class="report-card" id="notebookReportCard" style="display: none;">
+                        <h3 class="report-title"><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-en="ML Model Evaluation Report" data-bn="এমএল মডেল মূল্যায়ন রিপোর্ট">ML Model Evaluation Report</span></h3>
+                        
+                        <div class="report-metrics" style="grid-template-columns: repeat(4, 1fr);">
+                            <div class="metric-box">
+                                <div class="metric-val" id="nbAccuracy">N/A</div>
+                                <div class="metric-lbl" data-en="Accuracy" data-bn="একুরেসি">Accuracy</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="nbF1">N/A</div>
+                                <div class="metric-lbl" data-en="F1-Score" data-bn="এফ১-স্কোর">F1-Score</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="nbRecall">N/A</div>
+                                <div class="metric-lbl" data-en="Recall" data-bn="রিকল">Recall</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val" id="nbPrecision">N/A</div>
+                                <div class="metric-lbl" data-en="Precision" data-bn="প্রিসিশন">Precision</div>
+                            </div>
+                        </div>
+
+                        <!-- Notebook Details Story -->
+                        <div class="data-story-banner" id="notebookStoryBanner" style="background: rgba(16, 185, 129, 0.02); border-left: 3px solid var(--primary-color); padding: 1.2rem; border-radius: 4px;">
+                            <!-- Dynamically loaded -->
+                        </div>
+
+                        <!-- Quality/Model Heuristics Banner -->
+                        <div class="quality-banner clean" id="notebookModelsBanner">
+                            <h4><i class="fa-solid fa-robot"></i> <span data-en="Detected Models & Algorithms" data-bn="শনাক্তকৃত মডেল ও অ্যালগরিদম">Detected Models & Algorithms</span></h4>
+                            <p id="notebookModelsText" style="color: #a7f3d0;"></p>
+                        </div>
+
+                        <!-- ROC Curve Visualizer -->
+                        <div class="roc-curve-container" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                            <h4 style="font-family: var(--font-header); font-weight: 700; color: #fff; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fa-solid fa-chart-area"></i> <span data-en="Performance Visualizations (ROC Curve)" data-bn="পারফরম্যান্স ভিজ্যুয়ালাইজেশন (ROC কার্ভ)">Performance Visualizations (ROC Curve)</span>
+                            </h4>
+                            <div id="rocCurveWrapper" style="background: #040508; border: 1px solid var(--card-border); border-radius: 8px; padding: 1.5rem; display: flex; justify-content: center; align-items: center; min-height: 250px; width: 100%;">
+                                <canvas id="rocCanvas" width="400" height="300" style="display: none;"></canvas>
+                                <img id="extractedRocImg" style="max-width: 100%; max-height: 300px; border-radius: 4px; display: none;" alt="Extracted ROC Curve">
+                                <div id="noRocText" style="color: var(--text-muted); font-size: 0.85rem;" data-en="No saved plots found in the notebook. Rendering generated ROC Curve." data-bn="নোটবুকে কোনো সেভ করা গ্রাফ পাওয়া যায়নি। জেনারেটেড ROC কার্ভ রেন্ডার করা হচ্ছে।">No saved plots found in the notebook. Rendering generated ROC Curve.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Me Standalone Section -->
+    <section id="hiring-roles" class="hiring-section reveal">
+        <div class="section-header">
+            <div class="bg-watermark" data-en="Hiring" data-bn="হায়ার করুন">Hire Me</div>
+            <h2 class="section-title" data-en="Hire Me For" data-bn="যেসব পদে হায়ার করতে পারেন">Hire Me For</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle" data-en="Explore the key roles where I can leverage my data analytics, machine learning, and frontend skills to drive business value." data-bn="ডাটা অ্যানালিটিক্স, মেশিন লার্নিং এবং শপিফাই ফ্রন্টএন্ড স্কিল কাজে লাগিয়ে যেসব পজিশনে আমি আপনার ব্যবসায় অবদান রাখতে পারব!">Explore the key roles where I can leverage my data analytics, machine learning, and frontend skills to drive business value.</p>
+        </div>
+
+        <div class="hiring-tabs-container">
+            <div class="hiring-tabs">
+                <button class="hiring-tab-btn active" data-role="data-analyst">
+                    <i class="fa-solid fa-chart-line"></i> <span data-en="Data Analyst" data-bn="ডেটা অ্যানালিস্ট">Data Analyst</span>
+                </button>
+                <button class="hiring-tab-btn" data-role="bi-analyst">
+                    <i class="fa-solid fa-chart-pie"></i> <span data-en="BI Analyst" data-bn="বিআই অ্যানালিস্ট">BI Analyst</span>
+                </button>
+                <button class="hiring-tab-btn" data-role="data-scientist">
+                    <i class="fa-solid fa-flask"></i> <span data-en="Data Scientist" data-bn="ডেটা সায়েন্টিস্ট">Data Scientist</span>
+                </button>
+                <button class="hiring-tab-btn" data-role="ml-engineer">
+                    <i class="fa-solid fa-brain"></i> <span data-en="ML Engineer" data-bn="মেশিন লার্নিং ইঞ্জিনিয়ার">ML Engineer</span>
+                </button>
+                <button class="hiring-tab-btn" data-role="product-analyst">
+                    <i class="fa-solid fa-lightbulb"></i> <span data-en="Product Analyst" data-bn="প্রোডাক্ট অ্যানালিস্ট">Product Analyst</span>
+                </button>
+                <button class="hiring-tab-btn" data-role="data-engineer">
+                    <i class="fa-solid fa-gears"></i> <span data-en="Data Engineer" data-bn="ডেটা ইঞ্জিনিয়ার">Data Engineer</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hiring-content">
+            <!-- Data Analyst Details -->
+            <div class="hiring-detail-card active" id="detail-data-analyst">
+                <div class="hire-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 data-en="Data Analyst" data-bn="ডেটা অ্যানালিস্ট">Data Analyst</h3>
+                <p data-en="Using my expertise in SQL (queries, joins, CTEs), Python (Pandas/Numpy), and Advanced Excel, I clean complex data, perform EDA, and extract insights. My ability to translate raw numbers into actionable business decisions makes me a strong fit." data-bn="SQL (কুয়েরি, জয়েন, সিটিই), Python (Pandas/Numpy) এবং Advanced Excel ব্যবহারের গভীর দক্ষতা দিয়ে আমি জটিল ডেটা রি-শেপ, ইটিএল এবং পরিসংখ্যান বিশ্লেষণ করি। যেকোনো জটিল ডেটাকে সহজ সিদ্ধান্তের উপযোগী রিপোর্টে রূপান্তর করাই আমার প্রধান শক্তি।">Using my expertise in SQL (queries, joins, CTEs), Python (Pandas/Numpy), and Advanced Excel, I clean complex data, perform EDA, and extract insights. My ability to translate raw numbers into actionable business decisions makes me a strong fit.</p>
+            </div>
+            <!-- BI Analyst Details -->
+            <div class="hiring-detail-card" id="detail-bi-analyst" style="display: none;">
+                <div class="hire-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3 data-en="BI Analyst" data-bn="বিআই অ্যানালিস্ট">BI Analyst</h3>
+                <p data-en="Equipped with Power BI (DAX, modeling) and Tableau, I build enterprise-grade interactive dashboards and KPI reports. I design clear visual layouts that let stakeholders track metrics instantly." data-bn="Power BI (DAX, ডেটা মডেলিং) এবং Tableau ব্যবহার করে আমি ডায়নামিক কেপিআই ড্যাশবোর্ড ও রিপোর্ট তৈরি করি, যা ব্যবসার জটিল পারফরম্যান্স মেট্রিক্স সহজ ভিজ্যুয়াল স্টোরিটেলিংয়ের মাধ্যমে উপস্থাপন করে।">Equipped with Power BI (DAX, modeling) and Tableau, I build enterprise-grade interactive dashboards and KPI reports. I design clear visual layouts that let stakeholders track metrics instantly.</p>
+            </div>
+            <!-- Data Scientist Details -->
+            <div class="hiring-detail-card" id="detail-data-scientist" style="display: none;">
+                <div class="hire-icon"><i class="fa-solid fa-flask"></i></div>
+                <h3 data-en="Data Scientist" data-bn="ডেটা সায়েন্টিস্ট">Data Scientist</h3>
+                <p data-en="Combining my mathematical foundations with Python statistical libraries and Machine Learning algorithms, I build predictive models, run A/B tests, and structure unstructured datasets to solve predictive business cases." data-bn="Python স্ট্যাটিস্টিক্যাল লাইব্রেরি এবং Machine Learning এলগরিদম ব্যবহার করে আমি উন্নত প্রেডিক্টিভ মডেলিং, ক্লাসিফিকেশন পাইপলাইন এবং হাইপোথিসিস টেস্টিং (A/B testing) সলিউশন ডিজাইন করি।">Combining my mathematical foundations with Python statistical libraries and Machine Learning algorithms, I build predictive models, run A/B tests, and structure unstructured datasets to solve predictive business cases.</p>
+            </div>
+            <!-- ML Engineer Details -->
+            <div class="hiring-detail-card" id="detail-ml-engineer" style="display: none;">
+                <div class="hire-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3 data-en="Machine Learning Engineer" data-bn="মেশিন লার্নিং ইঞ্জিনিয়ার">Machine Learning Engineer</h3>
+                <p data-en="I design, train, and deploy regression and classification models using Python machine learning frameworks (Scikit-Learn). I focus on model optimization, evaluation metrics (accuracy, F1-score), and production readiness." data-bn="Python-এর সাইকিট-লার্ন (Scikit-Learn) ফ্রেমওয়ার্ক দিয়ে আমি এন্ড-টু-এন্ড রিগ্রেশন ও ক্লাসিফিকেশন মডেল তৈরি ও টিউন করি এবং সর্বোচ্চ একুরেসি ও এফ১-স্কোর অর্জনে হাইপারপ্যারামিটার অপ্টিমাইজ করি।">I design, train, and deploy regression and classification models using Python machine learning frameworks (Scikit-Learn). I focus on model optimization, evaluation metrics (accuracy, F1-score), and production readiness.</p>
+            </div>
+            <!-- Product Analyst Details -->
+            <div class="hiring-detail-card" id="detail-product-analyst" style="display: none;">
+                <div class="hire-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h3 data-en="Product Analyst" data-bn="প্রোডাক্ট অ্যানালিস্ট">Product Analyst</h3>
+                <p data-en="Using custom data telemetry and funnel analytics, I track user retention and behavior. I run regression analysis to understand feature usage trends and perform A/B testing evaluation to guide product updates." data-bn="ব্যবহারকারীর আচরণ ও রিটেনশন ট্র্যাকিং, ফানেল অ্যানালিসিস এবং এ/বি টেস্টিং মূল্যায়নের মাধ্যমে প্রোডাক্টের ফিচার ব্যবহার ট্রেন্ড বের করি এবং প্রোডাক্ট ডেভেলপমেন্টে ডেটা ব্যাকড ইনসাইট প্রদান করি।">Using custom data telemetry and funnel analytics, I track user retention and behavior. I run regression analysis to understand feature usage trends and perform A/B testing evaluation to guide product updates.</p>
+            </div>
+            <!-- Data Engineer Details -->
+            <div class="hiring-detail-card" id="detail-data-engineer" style="display: none;">
+                <div class="hire-icon"><i class="fa-solid fa-gears"></i></div>
+                <h3 data-en="Data Engineer" data-bn="ডেটা ইঞ্জিনিয়ার">Data Engineer</h3>
+                <p data-en="Leveraging my Web Scraping skills (BeautifulSoup, Scrapy, Selenium) and ETL frameworks, I automate large-scale data ingestion and orchestrate pipelines, delivering clean, structured data to warehouses." data-bn="Web Scraping (BeautifulSoup, Scrapy) এবং ইটিএল (ETL) ফ্রেমওয়ার্কের সাহায্যে আমি ডাইনামিক ওয়েবসাইট থেকে ডেটা কালেকশন পাইপলাইন ও ডেটাবেজ ওয়ার্কফ্লো স্বয়ংক্রিয় করি।">Leveraging my Web Scraping skills (BeautifulSoup, Scrapy, Selenium) and ETL frameworks, I automate large-scale data ingestion and orchestrate pipelines, delivering clean, structured data to warehouses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gold Accent CTA Bottom Banner -->
+    <section class="bottom-banner reveal">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h2 data-en="Ready to transform your data into business intelligence?" data-bn="আপনার ডেটাকে ব্যবসায়িক বুদ্ধিমত্তায় রূপান্তর করতে প্রস্তুত?">Ready to transform your data into business intelligence?</h2>
+            <p data-en="I am available for freelance projects, consultations, and full-time opportunities." data-bn="আমি ফ্রিল্যান্স প্রজেক্ট, কনসালটেশন এবং ফুল-টাইম কাজের সুযোগের জন্য উন্মুক্ত।">I am available for freelance projects, consultations, and full-time opportunities.</p>
+            <a href="#contact" class="btn btn-primary" data-en="Let's Start a Conversation" data-bn="যোগাযোগ শুরু করুন"><i class="fa-solid fa-paper-plane"></i> Let's Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section reveal">
+        <div class="section-header">
+            <div class="bg-watermark" data-en="Contact" data-bn="যোগাযোগ">Contact</div>
+            <h2 class="section-title" data-en="Contact Me" data-bn="যোগাযোগ করুন">Contact Me</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle" data-en="Let's collaborate or talk about data! Drop a message below." data-bn="আপনার প্রজেক্ট বা ডেটা সম্পর্কিত যেকোনো বিষয়ে বার্তা পাঠান!">Let's collaborate or talk about data! Drop a message below.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 data-en="Contact Information" data-bn="যোগাযোগের তথ্য">Contact Information</h3>
+                <p data-en="Have an interesting project or opportunities you'd like to discuss? I'm always open to talking about data analysis, machine learning models, or automation solutions." data-bn="আপনার কি কোনো প্রজেক্ট বা আলোচনার সুযোগ আছে? আমি যেকোনো সময় ডাটা অ্যানালিটিক্স, মেশিন লার্নিং বা অটোমেশন সলিউশন নিয়ে কথা বলতে প্রস্তুত।">Have an interesting project or opportunities you'd like to discuss? I'm always open to talking about data analysis, machine learning models, or automation solutions.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span id="contactEmail">ashfak.cse.221@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="contactLocation">Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+
+                <div class="social-links-footer">
+                    <a href="https://github.com" target="_blank" id="footerGithub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" id="footerLinkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://kaggle.com" target="_blank" id="footerKaggle" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/ashfak.cse.221@gmail.com" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-en="Name" data-bn="নাম">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-en="Email" data-bn="ইমেইল">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-en="Subject" data-bn="বিষয়">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Collaboration">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-en="Message" data-bn="বার্তা">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" data-en="Send Message" data-bn="বার্তা পাঠান">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <span id="footerName">Ashfak</span>. <span data-en="All Rights Reserved." data-bn="সর্বস্বত্ব সংরক্ষিত।">All Rights Reserved.</span></p>
+            <p class="footer-tech" data-en="Powered by HTML, CSS, JS & GitHub Pages" data-bn="নির্মিত হয়েছে HTML, CSS, JS এবং গিটহাব পেজেস দিয়ে">Powered by HTML, CSS, JS & GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Floating Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <button class="chat-bubble" id="chatBubble" aria-label="Chat with AI Assistant">
+            <i class="fa-solid fa-robot"></i>
+            <span class="chat-badge">AI</span>
+        </button>
+        
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-bot-info">
+                    <i class="fa-solid fa-robot chat-header-icon"></i>
+                    <div>
+                        <h4>Ashfak's AI Assistant</h4>
+                        <span class="status-indicator"><span class="status-dot"></span> Online (Self Offline)</span>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="chat-body" id="chatBody">
+                <div class="message bot-message">
+                    Hello! I am Ashfak's AI Assistant. I reply on his behalf when he is busy. How can I help you?
+                </div>
+                <!-- Chat option chips -->
+                <div class="chat-options" id="chatOptions">
+                    <button class="chat-chip" data-question="projects">Explore Projects</button>
+                    <button class="chat-chip" data-question="skills">View Skills</button>
+                    <button class="chat-chip" data-question="resume">Download Resume</button>
+                    <button class="chat-chip" data-question="contact">Contact Ashfak</button>
+                </div>
+            </div>
+            
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+                <button id="chatSendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="ml-playground.js"></script>
+    <script src="data-profiler.js"></script>
+    <script src="notebook-analyzer.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
