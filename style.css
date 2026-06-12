@@ -2354,3 +2354,19 @@ body, p, li, span, a, td, th, input, textarea, button {
     word-spacing: 2.2px !important; /* Explicit word spacing to separate words clearly */
     letter-spacing: 0.15px !important; /* Slightly increased letter spacing for legibility */
 }
+
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden;
+    }
+    .roles-grid {
+        grid-template-columns: 1fr;
+    }
+    .report-metrics {
+        grid-template-columns: 1fr !important;
+    }
+    .stats-panel {
+        grid-template-columns: 1fr;
+    }
+}
