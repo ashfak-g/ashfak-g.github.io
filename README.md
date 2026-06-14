@@ -6,7 +6,7 @@ A stunning, responsive, dark-themed portfolio website designed specifically for 
 - **Modern Dark Theme**: Rich aesthetics using Glassmorphism design and custom neon grids.
 - **Skills Radar Chart**: Visualized using [Chart.js](https://www.chartjs.org/) to showcase core competencies.
 - **Interactive ML Playground**: Browser-based linear, quadratic, and cubic regression fitting with real-time $R^2$, MSE, and mathematical equation displays.
-- **Responsive Navigation**: Smooth anchors and collapsible mobile drawer.
+- **Responsive Navigation**: Smooth anchors and a collapsible mobile drawer.
 - **Dynamic Projects Showcase**: Built-in interactive filters for sorting projects.
 - **Contact Form Integration**: Free contact submission mock (ready to connect with Formspree).
 
@@ -29,17 +29,17 @@ If you don't have one, go to [GitHub.com](https://github.com) and sign up for fr
 5. Click **Create repository**.
 
 ### Step 3: Push Your Code using Git
-Open your command terminal (Command Prompt, PowerShell, or Git Bash) in this project folder (`C:\Users\Ashfak\.gemini\antigravity\scratch\portfolio-website`) and run these commands:
+Open your command terminal (Command Prompt, PowerShell, or Git Bash) in this project folder and run these commands:
 
 ```bash
 # Initialize a local Git repository
 git init
 
 # Add all files to the staging area
-git add .
+git add.
 
 # Commit your changes
-git commit -m "Initial commit: Premium ML and Data Analyst portfolio"
+git commit -m "Initial commit: Premium ML and Data Analyst portfolio."
 
 # Rename default branch to main
 git branch -M main
@@ -75,12 +75,3 @@ After saving, wait 1-2 minutes. GitHub will compile the page. Refresh the page, 
 Click the link to view your live portfolio!
 
 ---
-
-## কিভাবে আপনার পার্সোনাল ইনফরমেশন আপডেট করবেন (Customizing Your Information)
-
-কোড এডিট করার ঝামেলা এড়াতে পুরো সাইটের ডেটা ডাইনামিক করা হয়েছে। আপনাকে `index.html` বা অন্য কোনো স্ক্রিপ্ট কোড পরিবর্তন করতে হবে না।
-
-১. **তথ্য পরিবর্তন**: [data.js](data.js) ফাইলটি ওপেন করুন। সেখানে প্রতিটি তথ্যের পাশে বাংলা কমেন্ট দেওয়া আছে। শুধুমাত্র ডাবল কোটেশন (`" "`) এর মাঝের অংশ আপনার নিজের তথ্য দিয়ে পরিবর্তন করুন। এর মাধ্যমে আপনার নাম, ডিগ্রি, সোশ্যাল লিংক, কাজের অভিজ্ঞতা, শিক্ষা, প্রজেক্ট এবং এআই চ্যাটবটের উত্তরগুলো পরিবর্তন হয়ে যাবে।
-২. **প্রোফাইল পিকচার**: আপনার প্রফেশনাল ছবিটি এই ফোল্ডারে রাখুন এবং সেটির নাম `Ashfak.jpg` দিন (অথবা [data.js](data.js) ফাইলে `profileImg: "আপনার_ছবির_নাম.jpg"` আপডেট করুন)।
-৩. **সিভি / রিজিউমি**: আপনার পিডিএফ সিভিটি এই ফোল্ডারে রাখুন এবং সেটির নাম `resume.pdf` দিন (অথবা [data.js](data.js) ফাইলে `resumeLink: "আপনার_সিভির_নাম.pdf"` দিন)।
-৪. **কন্টাক্ট ফর্ম**: কন্টাক্ট ফর্মটি বর্তমানে মক করা আছে (যা সাবমিট করলে সাকসেস মেসেজ দেখাবে)। আপনি যদি সরাসরি আপনার ইমেইলে মেসেজ পেতে চান, তবে [Formspree](https://formspree.io/) এর মতো একটি ফ্রি সার্ভিস ব্যবহার করে ফর্মের অ্যাকশন লিংক `index.html`-এ আপডেট করতে পারেন।
